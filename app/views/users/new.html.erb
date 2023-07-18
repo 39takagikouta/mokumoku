@@ -25,7 +25,6 @@
             </div>
             <div class="mb-3">
               <%= f.label :gender %>
-              <%binding.irb%>
               <%= f.select :gender, User.genders_i18n.invert, {}, class: 'form-control' %>
             </div>
             <div class="mb-3">
