@@ -82,6 +82,10 @@
             <%= l @event.held_at, format: :short %>
           </h4>
           <hr />
+          <% if @event.only_woman %>
+            女性限定
+            <hr />
+          <% end %>
           <% if current_user.woman? || !@event.only_woman %>
             <div class="text-center">
               <% if logged_in? %>
