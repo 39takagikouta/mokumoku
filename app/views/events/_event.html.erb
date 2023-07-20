@@ -20,6 +20,10 @@
         </div>
       </div>
       <hr />
+      <% if event.only_woman? %>
+        女性限定
+        <hr />
+      <% end %>
       <div class="d-flex align-items-center justify-content-between">
         <div class="d-flex align-items-center gap-3">
           <%= image_tag event.user.decorate.avatar, class: 'avatar-sm rounded-circle' %>
